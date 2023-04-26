@@ -10,8 +10,9 @@ export default function Home() {
       teamname: 'teamname',
       date: '23.04.28 09:20',
       title: '[Update] 새로운 기능을 추가했어요',
+      link: 'https://github.com/',
       description:
-        'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
+        'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하\nProduct Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하\nProduct Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하\nProduct Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하\nProduct Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
     },
     {
       id: 2,
@@ -20,6 +21,7 @@ export default function Home() {
       teamname: 'teamname',
       date: '23.04.28 09:20',
       title: '[Update] 새로운 기능을 추가했어요',
+      link: 'https://github.com/',
       description:
         'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
     },
@@ -30,6 +32,7 @@ export default function Home() {
       teamname: 'teamname',
       date: '23.04.28 09:20',
       title: '[Update] 새로운 기능을 추가했어요',
+      link: 'https://github.com/',
       description:
         'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
     },

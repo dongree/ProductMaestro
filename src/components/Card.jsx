@@ -1,9 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Card({ info }) {
   const { projectname, username, teamname, date, title, description } = info;
+  const navigate = useNavigate();
+
   return (
-    <li className="flex flex-col bg-white p-6 cursor-pointer mb-5 border-2 ">
+    <li
+      className="flex flex-col bg-white p-6 cursor-pointer mb-5 border-2"
+      onClick={() => navigate(`/products/${info.id}`, { state: { info } })}
+    >
       <div className="flex justify-between">
         <p className="text-xl font-bold">{projectname}</p>
         <p className="mr-5 text-gray-500">{date}</p>
