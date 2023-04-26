@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
   return (
-    <nav className=" basis-1/5 py-6 px-10">
-      <div className="mt-24">
-        <p className="text-4xl font-light">Product</p>
-        <p className="text-4xl font-semibold">Maestro</p>
+    <nav className="basis-1/5 py-6 px-10 max-sm:flex max-sm:items-center max-sm:justify-between">
+      <div className="mt-24 max-sm:mt-0 text-4xl max-sm:text-lg">
+        <p className=" font-light">Product</p>
+        <p className=" font-semibold">Maestro</p>
       </div>
-      <ul className="mt-12 font">
+      <ul className="mt-12 text-lg max-sm:mt-0 max-sm:flex max-sm:text-sm">
         <NavLink
           style={({ isActive }) => {
             return {
@@ -18,7 +18,7 @@ export default function Nav() {
           }}
           to="/"
         >
-          <li className="my-5 text-lg">Home</li>
+          <li className="my-5 max-sm:mx-5">Home</li>
         </NavLink>
         <NavLink
           style={({ isActive }) => {
@@ -29,7 +29,7 @@ export default function Nav() {
           }}
           to="/add"
         >
-          <li className="my-5 text-lg">Make product</li>
+          <li className="my-5">Make product</li>
         </NavLink>
       </ul>
     </nav>

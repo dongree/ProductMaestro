@@ -69,7 +69,7 @@ export default function Home() {
   ];
 
   return (
-    <section className="basis-4/5 bg-gray-100 px-28 py-10 flex flex-col justify-center">
+    <section className="basis-4/5 bg-gray-100 px-28 py-10 flex flex-col sm:justify-center max-sm:h-full max-sm:px-5">
       {/* 구독까지 구현 가능할까..? */}
       {/* <p className="text-2xl font-bold ">내가 구독하는 프로덕트</p>
       <ul className="flex my-7">

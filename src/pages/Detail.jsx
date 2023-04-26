@@ -7,16 +7,18 @@ export default function Detail() {
   const { projectname, username, teamname, link, title, description } = info;
 
   return (
-    <section className="basis-4/5 bg-gray-100 px-28 py-10 flex flex-col justify-center ">
+    <section className="basis-4/5 bg-gray-100 px-28 py-10 flex flex-col sm:justify-center max-sm:h-full max-sm:px-5">
       <div className="flex flex-col h-5/6 bg-white rounded-lg p-5 ">
         <div className="flex flex-col overflow-x-hidden">
           <div className="flex justify-between items-center mb-4">
-            <p className="text-3xl font-bold">{title}</p>
-            <div className="mr-5">
-              <p className="text-xl font-bold">{projectname}</p>
-              <div className="flex">
+            <p className="text-3xl font-bold max-sm:text-xl max-sm:mr-3">
+              {title}
+            </p>
+            <div className="sm:mr-5">
+              <p className="sm:text-xl font-bold ">{projectname}</p>
+              <div className="flex max-sm:flex-col">
                 <p>{username}</p>
-                <p className="ml-2 text-gray-500">{teamname}</p>
+                <p className="sm:ml-2 text-gray-500">{teamname}</p>
               </div>
             </div>
           </div>

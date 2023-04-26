@@ -12,14 +12,14 @@ export default function Card({ info }) {
     >
       <div className="flex justify-between">
         <p className="text-xl font-bold">{projectname}</p>
-        <p className="mr-5 text-gray-500">{date}</p>
+        <p className="sm:mr-5 text-gray-500">{date}</p>
       </div>
       <div className="flex">
         <p>{username}</p>
         <p className="ml-2 text-gray-500">{teamname}</p>
       </div>
       {/* <div>{date}</div> */}
-      <p className="text-2xl font my-2 font-semibold">{title}</p>
+      <p className="text-2xl font my-2 font-semibold max-sm:text-xl">{title}</p>
       <pre className="line-clamp-3 font-sans">{description}</pre>
     </li>
   );

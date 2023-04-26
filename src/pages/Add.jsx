@@ -26,9 +26,8 @@ export default function Add() {
 
     init();
   };
-
   return (
-    <section className="basis-4/5 bg-gray-100 px-28 py-10 flex flex-col justify-center ">
+    <section className="basis-4/5 bg-gray-100 px-28 py-10 flex flex-col  sm:justify-center max-sm:h-full max-sm:px-5">
       <div className="flex flex-col h-5/6 bg-white justify-center rounded-lg p-5">
         <form
           action=""
