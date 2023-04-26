@@ -6,6 +6,7 @@ export default function Add() {
   const [teamname, setTeamname] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
+  const [url, setUrl] = useState('');
 
   const init = () => {
     setProjectName('');
@@ -13,6 +14,7 @@ export default function Add() {
     setTeamname('');
     setTitle('');
     setDescription('');
+    setUrl('');
   };
 
   const handleSubmit = e => {
@@ -41,15 +43,16 @@ export default function Add() {
                 setProjectName(e.target.value);
               }}
               placeholder="프로젝트명"
-              className="border-2 w-full p-3 mb-6 text-sm"
+              className="border-2 w-full p-3 mb-2 text-sm"
               required
             />
+
             <input
               type="text"
               value={username}
               onChange={e => setUsername(e.target.value)}
               placeholder="작성자명"
-              className="border-2 w-full p-3 mb-6 text-sm"
+              className="border-2 w-full p-3 mb-2 text-sm"
               required
             />
             <input
@@ -57,18 +60,18 @@ export default function Add() {
               value={teamname}
               onChange={e => setTeamname(e.target.value)}
               placeholder="팀명"
-              className="border-2 w-full p-3 mb-6 text-sm"
+              className="border-2 w-full p-3 mb-2 text-sm"
               required
             />
+
             <input
               type="text"
               value={title}
               onChange={e => setTitle(e.target.value)}
               placeholder="제목"
-              className="border-2 w-full p-3 mb-6 text-sm"
+              className="border-2 w-full p-3 mb-2 text-sm"
               required
             />
-
             <textarea
               name=""
               id=""
@@ -77,9 +80,16 @@ export default function Add() {
               value={description}
               onChange={e => setDescription(e.target.value)}
               placeholder="설명"
-              className="border-2 w-full p-3 mb-6 text-sm resize-none"
+              className="border-2 w-full p-3 mb-2 text-sm resize-none"
               required
             ></textarea>
+            <input
+              type="url"
+              value={url}
+              onChange={e => setUrl(e.target.value)}
+              placeholder="URL (선택)"
+              className="border-2 w-full p-3 mb-2 text-sm"
+            />
           </div>
 
           <button className="bg-gray-800 w-9/12 text-xl text-white font-semibold my-4 p-2 rounded-lg">
