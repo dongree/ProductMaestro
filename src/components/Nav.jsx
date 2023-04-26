@@ -1,13 +1,38 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
-  const navigate = useNavigate();
-
   return (
-    <nav>
-      <div onClick={() => navigate('/', {})}>home</div>
-      <div onClick={() => navigate('/add', {})}>make product</div>
+    <nav className=" basis-1/6 p-6">
+      <div className="mt-24">
+        <p className="text-3xl font-light">Product</p>
+        <p className="text-3xl font-semibold">Maestro</p>
+      </div>
+      <ul className="mt-12 font">
+        <NavLink
+          style={({ isActive }) => {
+            return {
+              fontWeight: isActive ? '600' : '',
+              color: isActive ? 'black' : 'gray',
+            };
+          }}
+          exact
+          to="/"
+        >
+          <li className="my-5">Home</li>
+        </NavLink>
+        <NavLink
+          style={({ isActive }) => {
+            return {
+              fontWeight: isActive ? '600' : '',
+              color: isActive ? 'black' : 'gray',
+            };
+          }}
+          to="/add"
+        >
+          <li className="my-5">Make product</li>
+        </NavLink>
+      </ul>
     </nav>
   );
 }
