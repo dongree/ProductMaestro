@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
   return (
-    <nav className=" basis-1/6 p-6">
+    <nav className=" basis-1/5 p-6">
       <div className="mt-24">
         <p className="text-3xl font-light">Product</p>
         <p className="text-3xl font-semibold">Maestro</p>
