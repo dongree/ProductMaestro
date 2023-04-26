@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../components/Card';
 
 export default function Home() {
@@ -67,6 +67,13 @@ export default function Home() {
         'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
     },
   ];
+
+  // GET 요청하기
+  // const [data, setData] = useState([]);
+
+  // useEffect(() => {
+  //   fetch();
+  // }, []);
 
   return (
     <section className="basis-4/5 bg-gray-100 px-28 py-10 flex flex-col sm:justify-center max-sm:h-full max-sm:px-5">

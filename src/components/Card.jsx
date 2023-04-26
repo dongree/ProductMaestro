@@ -12,7 +12,7 @@ export default function Card({ info }) {
     >
       <div className="flex justify-between">
         <p className="text-xl font-bold">{projectname}</p>
-        <p className="sm:mr-5 text-gray-500">{date}</p>
+        <p className="text-gray-500">{date}</p>
       </div>
       <div className="flex">
         <p>{username}</p>
