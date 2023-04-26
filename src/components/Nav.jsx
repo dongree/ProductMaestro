@@ -16,7 +16,6 @@ export default function Nav() {
               color: isActive ? 'black' : 'gray',
             };
           }}
-          exact
           to="/"
         >
           <li className="my-5 text-lg">Home</li>

@@ -4,6 +4,7 @@ import Card from '../components/Card';
 export default function Home() {
   const data = [
     {
+      id: 1,
       projectname: 'Cool Project',
       username: '김승빈',
       teamname: 'teamname',
@@ -13,6 +14,7 @@ export default function Home() {
         'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
     },
     {
+      id: 2,
       projectname: 'Cool Project',
       username: '김승빈',
       teamname: 'teamname',
@@ -22,6 +24,7 @@ export default function Home() {
         'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
     },
     {
+      id: 3,
       projectname: 'Cool Project',
       username: '김승빈',
       teamname: 'teamname',
@@ -31,6 +34,7 @@ export default function Home() {
         'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
     },
     {
+      id: 4,
       projectname: 'Cool Project',
       username: '김승빈',
       teamname: 'teamname',
@@ -40,6 +44,7 @@ export default function Home() {
         'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
     },
     {
+      id: 5,
       projectname: 'Cool Project',
       username: '김승빈',
       teamname: 'teamname',
@@ -49,6 +54,7 @@ export default function Home() {
         'Product Maestro에 새롭게 추가된 기능들이에요\n프로필에 Role을 표시할 수 있도록 바뀌었어요!\n관심있는 프로덕트를 구독할 수 있어요!\n 하하',
     },
     {
+      id: 6,
       projectname: 'Cool Project',
       username: '김승빈',
       teamname: 'teamname',
@@ -85,7 +91,7 @@ export default function Home() {
       </ul> */}
       <ul className="flex flex-col overflow-scroll h-5/6 overflow-x-hidden">
         {data.map(item => (
-          <Card info={item} />
+          <Card info={item} key={item.id} />
         ))}
       </ul>
     </section>
