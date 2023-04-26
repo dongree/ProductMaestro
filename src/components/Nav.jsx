@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 export default function Nav() {
   return (
-    <nav className=" basis-1/5 p-6">
+    <nav className=" basis-1/5 py-6 px-10">
       <div className="mt-24">
-        <p className="text-3xl font-light">Product</p>
-        <p className="text-3xl font-semibold">Maestro</p>
+        <p className="text-4xl font-light">Product</p>
+        <p className="text-4xl font-semibold">Maestro</p>
       </div>
       <ul className="mt-12 font">
         <NavLink
@@ -19,7 +19,7 @@ export default function Nav() {
           exact
           to="/"
         >
-          <li className="my-5">Home</li>
+          <li className="my-5 text-lg">Home</li>
         </NavLink>
         <NavLink
           style={({ isActive }) => {
@@ -30,7 +30,7 @@ export default function Nav() {
           }}
           to="/add"
         >
-          <li className="my-5">Make product</li>
+          <li className="my-5 text-lg">Make product</li>
         </NavLink>
       </ul>
     </nav>
