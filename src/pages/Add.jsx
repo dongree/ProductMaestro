@@ -33,7 +33,7 @@ export default function Add() {
           className="flex flex-col h-full items-center justify-center"
           onSubmit={handleSubmit}
         >
-          <div className="w-4/5 flex flex-col items-center ">
+          <div className="w-4/5 flex flex-col items-center overflow-x-hidden">
             <input
               type="text"
               value={projectName}
