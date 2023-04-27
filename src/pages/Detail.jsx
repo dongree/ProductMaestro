@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 export default function Detail() {
   const location = useLocation();
   const info = location.state.info;
-  const { projectname, username, teamname, link, title, description } = info;
+  const { projectname, username, teamname, url, title, description } = info;
 
   return (
     <section className="basis-4/5 bg-gray-100 px-28 py-10 flex flex-col sm:justify-center max-sm:h-full max-sm:px-5">
@@ -22,11 +22,11 @@ export default function Detail() {
               </div>
             </div>
           </div>
-          {link ? (
+          {url ? (
             <div className=" font-semibold">
               <span>project 주소 : </span>
-              <a className="text-green-500" href={link}>
-                {link}
+              <a className="text-green-500" href={url}>
+                {url}
               </a>
             </div>
           ) : (
