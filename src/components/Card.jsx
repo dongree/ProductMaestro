@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Card({ info }) {
-  const { projectname, username, teamname, date, title, description } = info;
+  const { projectname, username, teamname, time, title, description } = info;
   const navigate = useNavigate();
 
   return (
@@ -12,7 +12,7 @@ export default function Card({ info }) {
     >
       <div className="flex justify-between">
         <p className="text-xl font-bold">{projectname}</p>
-        <p className="text-gray-500">{date}</p>
+        <p className="text-gray-500">{time}</p>
       </div>
       <div className="flex">
         <p>{username}</p>

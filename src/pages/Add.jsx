@@ -1,5 +1,6 @@
-import axios from 'axios';
 import React, { useState } from 'react';
+import Firebase from '../api/firebase';
+import uuid from 'react-uuid';
 
 export default function Add() {
   const [projectName, setProjectName] = useState('');
@@ -21,20 +22,24 @@ export default function Add() {
   const handleSubmit = e => {
     e.preventDefault();
 
-    // post 요청하기
-    axios.post('/new', {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      data: {
-        projectName,
-        userName,
-        teamName,
-        title,
-        description,
-        link: url,
-      },
-    });
+    const firebase = new Firebase();
+
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth();
+    const date = now.getDate();
+    const hour = now.getHours();
+    const min = now.getMinutes();
+
+    firebase.addItem(
+      uuid(),
+      `${year}.${month}.${date} ${hour}:${min}`,
+      projectName,
+      userName,
+      teamName,
+      title,
+      description
+    );
 
     init();
   };
