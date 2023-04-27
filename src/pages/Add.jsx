@@ -1,17 +1,18 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 
 export default function Add() {
   const [projectName, setProjectName] = useState('');
-  const [username, setUsername] = useState('');
-  const [teamname, setTeamname] = useState('');
+  const [userName, setUserName] = useState('');
+  const [teamName, setTeamName] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [url, setUrl] = useState('');
 
   const init = () => {
     setProjectName('');
-    setUsername('');
-    setTeamname('');
+    setUserName('');
+    setTeamName('');
     setTitle('');
     setDescription('');
     setUrl('');
@@ -19,10 +20,21 @@ export default function Add() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(description);
 
     // post 요청하기
-    // fetch(url, {method:POST}).then()
+    axios.post('/new', {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      data: {
+        projectName,
+        userName,
+        teamName,
+        title,
+        description,
+        link: url,
+      },
+    });
 
     init();
   };
@@ -48,16 +60,16 @@ export default function Add() {
 
             <input
               type="text"
-              value={username}
-              onChange={e => setUsername(e.target.value)}
+              value={userName}
+              onChange={e => setUserName(e.target.value)}
               placeholder="작성자명"
               className="border-2 w-full p-3 mb-2 text-sm"
               required
             />
             <input
               type="text"
-              value={teamname}
-              onChange={e => setTeamname(e.target.value)}
+              value={teamName}
+              onChange={e => setTeamName(e.target.value)}
               placeholder="팀명"
               className="border-2 w-full p-3 mb-2 text-sm"
               required
