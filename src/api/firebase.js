@@ -17,7 +17,16 @@ export default class Firebase {
     this.db = getDatabase();
   }
 
-  addItem = (id, time, projectname, username, teamname, title, description) => {
+  addItem = (
+    id,
+    time,
+    projectname,
+    username,
+    teamname,
+    title,
+    description,
+    url
+  ) => {
     set(ref(this.db, 'products/' + id), {
       id,
       time,
@@ -26,6 +35,7 @@ export default class Firebase {
       teamname,
       title,
       description,
+      url,
     });
   };
 

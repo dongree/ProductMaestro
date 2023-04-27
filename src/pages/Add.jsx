@@ -38,7 +38,8 @@ export default function Add() {
       userName,
       teamName,
       title,
-      description
+      description,
+      url
     );
 
     init();
